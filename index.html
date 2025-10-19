@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الغامدي & الزهراني</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  background-image: url('windowsXpBackground.webp');
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;       /* 🟢 vertically centers the window */
+  justify-content: center;   /* 🟢 horizontally centers the window */
+  overflow: hidden;          /* no scrolling */
+}
+
+/* XP window */
+.window {
+  background: rgba(236, 233, 216, 0.96);
+  border: 2px solid #0054e3;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  width: 70vw;               /* 🟢 scalable width (70% of viewport) */
+  max-width: 800px;          /* 🟢 won’t exceed this width */
+  height: auto;
+  max-height: 80vh;          /* 🟢 fits within screen height */
+  overflow-y: auto;          /* allow internal scroll if content exceeds height */
+}
+
+.title-bar {
+  background: linear-gradient(to right, #245edb, #7ba7f7);
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.3);
+}
+.title-bar .buttons {
+  display: flex;
+  gap: 4px;
+}
+.title-bar button {
+  width: 16px;
+  height: 16px;
+  border: none;
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  font-size: 10px;
+  line-height: 10px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.title-bar button:hover {
+  background: #ff8080;
+}
+
+.window-content {
+  padding: 15px;
+  background: #fff;
+  border-top: 1px solid #bfbfbf;
+}
+.hr-xp {
+  border: none;
+  border-top: 2px groove #d0d0d0;
+  margin: 10px 0;
+}
+
+/* Profiles */
+.profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 10px;
+}
+.profile:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.image-container img {
+  width: 20vw;               /* 🟢 scales with screen width */
+  max-width: 160px;
+  height: 200px;
+  object-fit: cover;
+  background: #fff;
+  border: 2px solid #999;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.content h2 {
+  color: #003399;
+  font-size: 1.2em;
+  margin-bottom: 6px;
+  text-shadow: 0 1px 1px #fff;
+}
+
+.summary {
+  font-size: 0.9em;
+  color: #111;
+  background: #f7f7f7;
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 2px;
+  line-height: 1.5;
+}
+
+.cv-link {
+  margin-top: 8px;
+}
+.cv-link a {
+  text-decoration: none;
+  background: #0054e3;
+  color: #fff;
+  padding: 5px 14px;
+  border-radius: 2px;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+.cv-link a:hover {
+  background: #003fba;
+}
+
+@media (max-width: 700px) {
+  .window {
+    width: 90vw; /* smaller screens */
+  }
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  .image-container img {
+    width: 50vw;
+    max-width: 180px;
+  }
+}
+</style>
+
+</head>
+<body>
+
+  <div class="window">
+    <div class="title-bar">
+      <span>نبذة عنا.exe</span>
+      <div class="buttons">
+      <button class="close-btn">×</button>
+
+      </div>
+    </div>
+
+    <div class="window-content">
+      <!-- عبدالرحمن الغامدي -->
+      <div class="profile">
+        <div class="image-container">
+          <img src="202042560 (1).jpg" alt="عبدالرحمن الغامدي">
+        </div>
+        <div class="content">
+          <h2>عبدالرحمن الغامدي</h2>
+          <p class="summary">
+خريج من جامعة الملك فهد للبترول والمعادن. تخصص هندسة برمجيات وتخصص دقيق في الأمن السيبراني وسلسلة الكتل. خريج اكاديمية كاوست كاوست في كلٍّ من الذكاء الاصطناعي عام 2024 والأمن السيبراني عام 2025. متدرب في شركة البحر الأحمر العالمية (Red Sea Global). قائد لمشروع التخرج "رُشد" الحاصل على المركز الثالث في معرض مشاريع التخرج في جامعة الملك فهد. شغوف جدًا بالمساهمة في عمليات الأمن السيبراني ومراقبة التهديدات ضمن بيئة العمليات الأمنية (SOC).          </p>
+          <div class="cv-link">
+            <a href="Abdulrahman_Alghamdi_CV_updated.pdf" download>أقرأ سيرتي الذاتية</a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="hr-xp">
+
+      <!-- عبدالرحمن الزهراني -->
+      <div class="profile">
+        <div class="image-container">
+          <img src="WhatsApp Image 2025-10-19 at 8.05.17 AM.jpeg" alt="عبدالرحمن الزهراني">
+        </div>
+        <div class="content">
+          <h2>عبدالرحمن الزهراني</h2>
+          <p class="summary">
+            خريج هندسة الحاسوب من جامعة الطائف، يتمتع بخبرة في الأنظمة المدمجة وشبكات الحاسوب ورؤية الحاسوب. متميز في التفكير التحليلي وحل المشكلات، وشغوف بتطبيق التقنيات الحديثة في بيئات عملية. يطمح إلى تطوير مساره المهني في مجالات الأمن السيبراني والأنظمة الذكية والمشاريع التقنية المستقبلية.
+          </p>
+          <div class="cv-link">
+            <a href="Abdulrahman Alzahrani Updated CV.pdf" download>أقرأ سيرتي الذاتية</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  // Select the close button
+  const closeBtn = document.querySelector('.close-btn');
+
+  // Funny messages list
+  const funnyMessages = [
+    "يابن الحلال تعوذ من ابليس",
+    "يا مسلم شف السيرة أول، يمكن يعجبك شيء!",
+    "لا تسكر!!  باقي ما شفت الزهراني زين!",
+    "طيب شيك على الغامدي مره ثانية!!",
+  ];
+
+  // When clicked
+  closeBtn.addEventListener('click', () => {
+    const randomMsg = funnyMessages[Math.floor(Math.random() * funnyMessages.length)];
+    alert(randomMsg);
+  });
+</script>
+
+</body>
+</html>
